@@ -173,7 +173,7 @@ $ curl --negotiate -u : <host>:<port>/<xxx>
 
 需要注意的是：
 
-* keystore和trustore是保存在本地文件系统中的，这意味着当你需要为standalone cluster manager启动SSL时，需要在所有的节点上生成和保存相应的keystore，truststore。
+* keystore和truststore是保存在本地文件系统中的，这意味着当你需要为standalone cluster manager启动SSL时，需要在所有的节点上生成和保存相应的keystore，truststore。
 * 当前YARN并不支持proxy HTTPS request，所以在使用YARN的时候enable SSL会带来一定的问题。
 * 当你在需要mutual authentication的时候才需要enable `spark.ssl.needClientAuth`。
 
